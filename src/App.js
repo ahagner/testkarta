@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { apiKey } from './config';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 
 
@@ -42,5 +43,5 @@ class App extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: ("")
+  apiKey: (apiKey)
 })(App)
